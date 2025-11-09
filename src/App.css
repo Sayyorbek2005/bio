@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ? oogle font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ? library  */
+
+p,
+button,
+li,
+h1,
+h2,
+h3,
+h4,
+span,
+b {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+
+/* ? root */
+
+:root {
+   
+    --border-1: border: 1px solid black;
+    /* ? colors */
+    /* --primary-color: #2563eb; */
+    --gray-color: rgb(77, 76, 76);
+    --primary-color: rgb(4, 179, 4);
+    --color-white: white;
+    --color-black: black;
+    
+    /* ? fonts */
+    --font-size-18: 18px;
+    --font-size-20: 20px;
+    --font-size-25: 25px;
+    --font-size-30: 30px;
+    --font-size-40: 40px;
+    --font-size-50: 50px;
+    /* ? font weight */
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    --font-weight-800: 800;
+    --font-weight-900: 900;
+
+
+    /* ? gap */
+    --gap-10: 10px;
+    --gap-20: 20px;
+    --gap-30: 30px;
+    --gap-40: 40px;
+    --gap-50: 50px;
+}
+
+h1{
+    font-size: var(--font-size-50);
+}
+
+p{
+    font-size: var(--font-size-20);
+}
+
+
+/* cursor pointer */
+
+button,
+i,
+svg,
+li {
+    cursor: pointer;
+}
+
+
+
+/* ? max-width */
+.max-width{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+/* ? display */
+
+.display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ? gap */
+
+.gap-10{
+gap: var(--gap-10);
+}
+
+.gap-20{
+gap: var(--gap-20);
+}
+
+.gap-30{
+gap: var(--gap-30);
+}
+
+.gap-40{
+gap: var(--gap-40);
+}
+
+.gap-50{
+gap: var(--gap-50);
+}
+
+
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.none{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
+
+
+
+/* ? side bar  */
+
+.side-bar{
+    padding: 20px;
+    background-color: rgba(173, 248, 196, 0.374);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    left: 0px;
+    top: 0;
+    bottom: 0px;
+    max-width: 270px;
+    width: 100%;
+    height: 100%;
+}
+
+.side-bar > div{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    background-color: var(--color-white);
+
+}
+.side-bar > div > img {
+    width: 100%;
+}
