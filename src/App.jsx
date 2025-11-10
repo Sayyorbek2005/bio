@@ -14,6 +14,9 @@ import Yomgir from './pages/yomgir/Yomgir';
 import Zambrug from './pages/zambrug/Zambrug';
 
 function App() {
+   const api = process.env.REACT_APP_API_URL;
+  console.log("API URL:", api); // Konsolda ko‘rasan
+
   return (
     <div className="App">
       {/* ? Routes */}

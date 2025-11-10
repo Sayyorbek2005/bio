@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-// ? img
+// 🔹 Rasmlar
 import buyumOynasi from "../../assets/5.1/buyum_oynasi.png";
 import hovoncha from "../../assets/5.1/hovoncha.png";
 import petri from "../../assets/5.1/petri_kosachasi.png";
@@ -25,38 +25,39 @@ const Tufelka = () => {
   const navigate = useNavigate();
   const [openIndex, setOpenIndex] = useState(null);
 
-  const toggle = (index) => {
+  const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <div data-aos="fade-down">
+    <div data-aos="fade-down" className="tufelka-container">
       <div className="max-width">
+        {/* 🔹 Sarlavha qismi */}
         <div className="pages-title">
           <h1>O'simliklarda moddalar transportini o'rganish</h1>
           <div onClick={() => navigate(-1)} className="display-flex orqaga">
             <i className="bx bx-chevron-left"></i>
-            <p>orqaga</p>
+            <p>Orqaga</p>
           </div>
         </div>
 
-        {/* ? side bar */}
+        {/* 🔹 Yon panel (asboblar) */}
         <div className="side-bar">
           {[buyumOynasi, hovoncha, petri, pinset, pipetka, probirka, qoplagich, skalpel, voronka].map(
             (img, i) => (
               <div className="bar-img" key={i}>
-                <img src={img} alt={`tool-${i}`} />
+                <img src={img} alt={`asbob-${i}`} />
               </div>
             )
           )}
         </div>
 
-        {/* ? accordion */}
+        {/* 🔹 Asosiy qism — Accordion */}
         <div className="accordion-container">
           {steps.map((step, index) => (
             <div key={index} className="accordion-item">
               <button
-                onClick={() => toggle(index)}
+                onClick={() => handleToggle(index)}
                 className={`accordion-header ${openIndex === index ? "active" : ""}`}
               >
                 <span>

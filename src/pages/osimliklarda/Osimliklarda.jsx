@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./osimliklarda.css"; // <== Agar bu fayl bo‘lmasa, "osimlik.css" dan foydalaning
 
-// ? img
+// 🧪 Asboblar rasmlari
 import buyumOynasi from "../../assets/5.1/buyum_oynasi.png";
 import hovoncha from "../../assets/5.1/hovoncha.png";
 import petri from "../../assets/5.1/petri_kosachasi.png";
@@ -12,6 +13,7 @@ import qoplagich from "../../assets/5.1/qoplagich_jpg-removebg-preview.png";
 import skalpel from "../../assets/5.1/skalpel-removebg-preview.png";
 import voronka from "../../assets/5.1/voronka_remove.png";
 
+// 🔹 Bosqichlar ro‘yxati
 const steps = [
   "Idishdagi iliq suvga shakar soling.",
   "Shakarli suvga achitqi zamburug'idan soling va iliq joyga qo'ying.",
@@ -25,22 +27,24 @@ const Osimliklarda = () => {
   const navigate = useNavigate();
   const [openIndex, setOpenIndex] = useState(null);
 
+  // 🔁 Accordion ochish/yopish funksiyasi
   const toggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <div data-aos="fade-down">
+    <div className="cont-osimliklarda" data-aos="fade-down">
       <div className="max-width">
+        {/* 📘 Sarlavha */}
         <div className="pages-title">
-          <h1>O'simliklarda moddalar transportini o'rganish</h1>
+          <h1>O'simliklarda moddalar transportini o‘rganish</h1>
           <div onClick={() => navigate(-1)} className="display-flex orqaga">
             <i className="bx bx-chevron-left"></i>
             <p>orqaga</p>
           </div>
         </div>
 
-        {/* ? side bar */}
+        {/* 🔧 Yon panel – asboblar */}
         <div className="side-bar">
           {[buyumOynasi, hovoncha, petri, pinset, pipetka, probirka, qoplagich, skalpel, voronka].map(
             (img, i) => (
@@ -51,10 +55,11 @@ const Osimliklarda = () => {
           )}
         </div>
 
-        {/* ? accordion */}
+        {/* 📋 Bosqichma-bosqich accordion */}
         <div className="accordion-container">
           {steps.map((step, index) => (
             <div key={index} className="accordion-item">
+              {/* Accordion sarlavhasi */}
               <button
                 onClick={() => toggle(index)}
                 className={`accordion-header ${openIndex === index ? "active" : ""}`}
@@ -65,6 +70,7 @@ const Osimliklarda = () => {
                 <span className="arrow">{openIndex === index ? "▾" : "▸"}</span>
               </button>
 
+              {/* Accordion tarkibi */}
               {openIndex === index && (
                 <div className="accordion-content">
                   <p>
