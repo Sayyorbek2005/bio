@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import './bargda.css'
 // 🔹 Rasmlar
 import buyumOynasi from "../../assets/5.1/buyum_oynasi.png";
 import hovoncha from "../../assets/5.1/hovoncha.png";
@@ -30,7 +31,7 @@ const Bargda = () => {
   };
 
   return (
-    <div data-aos="fade-down">
+    <div data-aos="fade-down"  className="bargda">
       <div className="max-width">
         {/* 🔹 Sarlavha */}
         <div className="pages-title">

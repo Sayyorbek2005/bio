@@ -86,6 +86,7 @@ const stepsData = [
    { 
     text: "Tayyor bo'lgan preparatni mikroskop ostida kuzating.", 
     img1: res, 
+    resultImg: res,
     
   },
 ];
