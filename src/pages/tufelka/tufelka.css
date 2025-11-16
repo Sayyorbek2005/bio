@@ -1,0 +1,12 @@
+
+.accordion-item video{
+    display: none;
+}
+
+.ac-7 .result-img{
+    display: none;
+}
+
+.ac-7 video{
+    display: block;
+}

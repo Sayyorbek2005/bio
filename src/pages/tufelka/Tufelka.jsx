@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import './tufelka.css'
+
 // 🔹 Asboblar rasmlari
 import buyumOynasi from "../../assets/5.1/buyum_oynasi.png";
 import pichan from "../../assets/7.6/pichan_ivitmasi-removebg-preview.png";
@@ -43,7 +45,7 @@ const stepsData = [
   {
     text: "Tufelka infuzoriyasining harakatini sekinlashtirish uchun tomchiga bir necha dona paxta tolasi tashlang",
     img1: suvliBuyumOna,
-    img2: pinset,
+    img2: pinDaPiyoz,
     resultImg: suvliBuyumOna,
   },
   {
@@ -144,10 +146,15 @@ const Tufelka = () => {
                       </>
                     ) : (
                       step.resultImg && (
+                        <div className="vid">
                         <img src={step.resultImg} alt="result" className="result-img" />
-                        // <video controls autoPlay >
-                        //   <source src={resVid} />
-                        // </video>
+                        
+                        <video  controls autoPlay>
+                          <source src={resVid} />
+                        </video>
+                        
+                        </div>
+                          
                       )
                     )}
                   </div>
