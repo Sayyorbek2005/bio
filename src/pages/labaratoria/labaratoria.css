@@ -17,7 +17,7 @@
 .pages-title > .orqaga{
     position: absolute;
     top: 190px;
-    left: 280px;
+    left: 100px;
 }
 
 .cont-kerakli-asboblar > h2{
@@ -56,3 +56,10 @@
     height: 350px;
 }
 
+.accordion-container img{
+    width: 150px;
+    height: 200px;
+}
+div > .result-img{
+    width: 160px !important;
+}

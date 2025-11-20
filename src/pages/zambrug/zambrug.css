@@ -232,7 +232,7 @@ div > .result-img {
   overflow-y: auto;
   position: fixed !important;
   top: 0px !important;
-  left: 0px !important;
+  left: 0px;
   bottom: 0px !important;
 }
 

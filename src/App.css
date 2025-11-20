@@ -161,3 +161,22 @@ gap: var(--gap-50);
 .side-bar > div > img {
     width: 100%;
 }
+
+
+
+/* ?  */
+
+.cont-zambrug, .cont-osimlik, .cont-osimliklarda, .tufelka-container .orqaga{
+    left: -200px !important;
+}
+
+.cont-zambrug, .cont-osimlik, .cont-osimliklarda, .tufelka-container .pages-title > h1{
+    position: relative;
+    left: 300px !important;
+    max-width: 80vw !important;
+    width: 100% !important;
+}
+
+.side-bar{
+    left: -300px !important;
+}

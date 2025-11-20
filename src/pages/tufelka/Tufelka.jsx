@@ -80,7 +80,7 @@ const Tufelka = () => {
     setOpenIndex(openIndex === index ? null : index);
     setAnimate(false);
     setShowResult(false);
-  };
+  };  
 
   // 🔹 "Ishni bajarish" tugmasi
   const handleDoClick = (index) => {
