@@ -62,7 +62,8 @@ const ZamZoom = () => {
 
     <div className="max-width">
       <div className="pages-title">
-        <h1>Mikroskopning tuzilishi bilan tanishish</h1>
+        <h1>Achitqi zamburug'i hujayrasining mikroskop ostida ko'rinishi
+</h1>
         <div onClick={() => navigate(-1)} className="display-flex orqaga">
           <i className="bx bx-chevron-left"></i>
           <p>orqaga</p>

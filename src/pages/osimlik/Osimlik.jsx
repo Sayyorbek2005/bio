@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./osimlik.css";
 
 // 🧪 Asboblar rasmlari (yon panel)
@@ -185,6 +185,13 @@ const Osimlik = () => {
             </div>
           ))}
         </div>
+       <NavLink to='/OsimlikZoom'>
+
+             <p>
+
+             Osimlikni zoom xolatda ko`rish
+             </p>
+          </NavLink>
       </div>
     </div>
   );
