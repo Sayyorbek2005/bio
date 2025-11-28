@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./zambrug.css";
 
 // ? img
@@ -24,6 +24,7 @@ import pipetkadaSuv from "../../assets/5.4-labaratoria/pipetkada_suv-removebg-pr
 import buyumYod from "../../assets/5.4-labaratoria/buyum_yod-removebg-preview.png";
 import buyumQopOyna from "../../assets/5.4-labaratoria/buyum_qop_oyna_sariq.png";
 import yeast from "../../assets/5.4-labaratoria/Yeast_3d.jpg";
+
 
 const stepsData = [
   { text: "Idishdagi iliq suvga shakar soling.", img1: suv, img2: qoshiqShakar, resultImg: suv },
@@ -117,6 +118,19 @@ const Zambrug = () => {
               )}
             </div>
           ))}
+          
+        </div>
+        <div>
+
+          <NavLink to='/ZamZoom'>
+
+             <p>
+
+             zambrug`ni zoom xolatda ko`rish
+             </p>
+          </NavLink>
+          
+            
         </div>
       </div>
     </div>

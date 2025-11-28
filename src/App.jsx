@@ -12,7 +12,7 @@ import Osimliklarda from './pages/osimliklarda/Osimliklarda';
 import Tufelka from './pages/tufelka/Tufelka';
 import Yomgir from './pages/yomgir/Yomgir';
 import Zambrug from './pages/zambrug/Zambrug';
-
+import ZamZoom from './pages/zambrug/ZamZoom'
 function App() {
    const api = process.env.REACT_APP_API_URL;
   console.log("API URL:", api); // Konsolda ko‘rasan
@@ -32,6 +32,7 @@ function App() {
         <Route path="/Tufelka" element={<Tufelka />} />
         <Route path="/Yomgir" element={<Yomgir />} />
         <Route path="/Zambrug" element={<Zambrug />} />
+        <Route path="/ZamZoom" element={<ZamZoom />} />
       </Routes>
       
     </div>
