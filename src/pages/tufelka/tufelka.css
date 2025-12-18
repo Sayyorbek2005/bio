@@ -1,4 +1,13 @@
 
+
+.tufelka-container .pages-title > h1 {
+    left: 150px !important;
+}
+
+.tufelka-container .orqaga {
+    left: 270px !important;
+}
+
 .accordion-item video{
     display: none;
 }
@@ -10,3 +19,10 @@
 .ac-7 video{
     display: block;
 }    
+
+
+/* ? */
+.tufelka-container .side-bar{
+    position: absolute;
+    left: 0px !important;
+}
