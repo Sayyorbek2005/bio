@@ -19,10 +19,6 @@ import  suv from "../../assets/7.4/suv-removebg-preview.png";
 
 
 
-
-
-
-
 import xonadaOsimlik from '../../assets/7.4/geran_-removebg-preview.png'
 import petriKos from '../../assets/7.4/petri_kosachasi.png'
 
