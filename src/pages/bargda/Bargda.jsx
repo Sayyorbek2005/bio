@@ -3,11 +3,9 @@ import { useNavigate } from "react-router-dom";
 import "./bargda.css"
 
 // 🧪 Asboblar rasmlari (yon panel)
-import buyumOynasi from "../../assets/5.1/buyum_oynasi.png";
 import qaychi from "../../assets/7.4/qaychi-removebg-preview.png";
 import pinset from "../../assets/5.1/pinset_o_zi.png";
 import pipetkaSide from "../../assets/5.1/pipetka_jpg-removebg-preview.png";
-import qoplagich from "../../assets/5.1/qoplagich_jpg-removebg-preview.png";
 import probirka from "../../assets/5.1/probirka-removebg-preview.png";
 import  qoraQo from "../../assets/7.4/qora_qog_ozzzz-removebg-preview.png";
 import  yod from "../../assets/7.4/yod_ochiq-removebg-preview.png";
@@ -15,97 +13,91 @@ import  spirtL from "../../assets/7.4/spirt_lampa-removebg-preview.png";
 import  spirt from "../../assets/7.4/spirt-removebg-preview.png";
 import  stakan from "../../assets/7.4/stakannn-removebg-preview.png";
 import  suv from "../../assets/7.4/suv-removebg-preview.png";
-
-
-
-
+import kesilganQ from "../../assets/7.4/kesilganQ.png";
+import qisqichB from '../../assets/7.4/4qisqichbarg.png'
+import gul from '../../assets/7.4/gul.png'
+import qogozGuldanQisqich from '../../assets/7.4/barg_qogoz_qisqich.png'
+import qogozGuldan from '../../assets/7.4/qogozGulda.png'
+import qisqich from '../../assets/7.4/qisqichch-removebg-preview.png'
+import stakanOlovda from '../../assets/7.4/issiq_suv-removebg-preview.png'
+import stakanIchidaIdish from '../../assets/7.4/bargli_spirt_lamp_suv_hammomida.png'
+import kesilganBarg from '../../assets/7.4/qirqilgan_barg.png'
+import konusStakan from '../../assets/7.4/konusStakan.png'
+import konusBarg from '../../assets/7.4/bargli_spirt.png'
+import stakandaBarg from '../bargda/../../assets/7.4/stakanda-barg.png'
 import xonadaOsimlik from '../../assets/7.4/geran_-removebg-preview.png'
 import petriKos from '../../assets/7.4/petri_kosachasi.png'
+import yashilS from '../../assets/7.4/yashil_suyuqlik-removebg-preview.png'
+import rangsizbarg from '../../assets/7.4/rangsiz_barg-removebg-preview.png'
+import kosadaS from '../../assets/7.4/chayish_uchun_suv-removebg-preview.png'
+import bargSuvDa from '../../assets/7.4/barg_suvda.png'
+import rangQaytargich from '../../assets/7.4/petri_yod-removebg-preview.png'
+import kokBarg from '../../assets/7.4/kok_sariq_barg.png'
 
 
-
-
-
-// 🥄 Bosqich rasmlari (Osimliklarda dan ko‘chirildi)
-import mikroskop from "../../assets/5.3/mikroskop-removebg-preview.png";
-import filterQ from "../../assets/5.3/filtr_qg-removebg-preview.png";
-import suvStakan from "../../assets/7.5/water_in_glass-removebg-preview.png";
-
-import skalpelN from "../../assets/5.3/skalpel-removebg-preview.png";
-import piyoz from "../../assets/5.3/piyoz-removebg-preview.png";
-import piozP from "../../assets/5.3/cutted_onion-removebg-preview.png";
-import suvliBuyumOna from "../../assets/5.3/suvli_buyum_oyna.png";
-import pinDaPiyoz from "../../assets/5.3/pinsetda_piyoz-removebg-preview.png";
-import pipetka from "../../assets/7.5/pipetka_jpg-removebg-preview.png";
-import pipS from '../../assets/5.3/pip-suv.png'
-// import yod from "../../assets/5.3/yod_ochiq-removebg-preview.png";
-import yPipetka from "../../assets/5.3/pipet_yod-removebg-preview.png";
-import buyumY from "../../assets/5.3/buyum_yod-removebg-preview.png";
-
-import underMik from "../../assets/5.3/under_microskope.jpg";
 import buyumQopOyna from "../../assets/5.3/buyum_qop_oyna_sariq.png";
 
 // ✅ 10 bosqichli ma'lumotlar (Osimliklarda dagi bilan bir xil)
 const stepsData = [
   {
     text: "Idishdagi iliq suvga shakar soling.",
-    img1: piyoz,
-    img2: skalpelN,
-    resultImg: piozP,
+    img1: qoraQo,
+    img2: qaychi,
+    resultImg: kesilganQ,
   },
   {
     text: "Piyozni skalpel yordamida bo'ling",
-    img1: suvStakan,
-    img2: pipetka,
-    resultImg: pipS,
+    img1: gul,
+    img2: kesilganQ,
+    resultImg: qogozGuldan,
   },
   {
     text: "Pipetka yordamida idishdagi suvdan oling.",
-    img1: buyumOynasi,
-    img2: pipS,
-    resultImg: suvliBuyumOna,
+    img1: qogozGuldan,
+    img2: qisqich,
+    resultImg: qogozGuldanQisqich,
   },
   {
     text: " Tozalab artilgan buyum oynasiga pipetka yordamida bir tomchi suv tomizing.",
-    img1: piozP,
-    img2: pinset,
-    resultImg: pinDaPiyoz,
+    img1: qogozGuldanQisqich,
+    img2: qaychi,
+    resultImg: qisqichB,
   },
   {
     text: " Pinset yordamida kesilgan piyozning yupqa po'stini ajratib oling.",
-    img1: suvliBuyumOna,
-    img2: pinDaPiyoz,
-    resultImg: suvliBuyumOna,
+    img1: stakanOlovda,
+    img2: kesilganBarg,
+    resultImg: stakandaBarg,
   },
   {
     text: " Piyozning yupqa po'stini buyum oynasidagi bir tomchi suv ustiga tekis qilib joylashtiring",
-    img1: yod,
-    img2: pipetka,
-    resultImg: yPipetka,
+    img1: konusStakan,
+    img2: kesilganBarg,
+    resultImg: konusBarg,
   },
   {
     text: " Pipetka yordamida yod eritmasidan oling.",
-    img1: suvliBuyumOna,
-    img2: yPipetka,
-    resultImg: buyumY,
+    img1: stakanOlovda,
+    img2: konusBarg,
+    resultImg: stakanIchidaIdish,
   },
   {
     text: " Piyozning yupqa po'stini buyum oynasiga qo'ygandan so'ng, ustiga 1 tomchi yod eritmasini tomizing",
-    img1: buyumY,
-    img2: qoplagich,
+    img1: yashilS,
+    img2: rangsizbarg,
     resultImg: buyumQopOyna,
   },
   {
     text: "Qoplagich oyna bilan yoping.",
-    img1: buyumQopOyna,
-    img2: filterQ,
-    resultImg: buyumQopOyna,
+    img1: kosadaS,
+    img2: rangsizbarg,
+    resultImg: bargSuvDa,
   },
   {
     text: "Tayyor bo'lgan preperatni mikroskop ostida kuzating.",
-    img1: mikroskop,
-    img2: buyumQopOyna,
-    resultImg: underMik ,
+    img1: rangQaytargich,
+    img2: rangsizbarg,
+    resultImg: kokBarg,
   },
 ];
 

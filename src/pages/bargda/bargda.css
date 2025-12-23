@@ -2,3 +2,25 @@
     position: absolute;
     top: 280px !important;
 }
+
+.cont-osimlik .ac-8 button{
+    display: none;
+}
+
+.cont-osimlik .accordion-container .right-img{
+    height: 100px;
+    width: 100px;
+    /* object-fit: cover; */
+}
+
+.cont-osimlik .accordion-container .result-img{
+    object-fit: none;
+    width: 300px !important;
+}
+
+.cont-osimlik .result-img{
+    
+    width: auto !important;
+    height: auto !important;
+    object-fit: cover !important;
+}
